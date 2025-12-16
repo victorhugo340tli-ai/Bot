@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Meu Bot Discord</title>
+
+<style>
+:root{
+    --roxo:#5865F2;
+    --preto:#0b0b0b;
+    --cinza:#1e1e1e;
+    --branco:#ffffff;
+}
+
+*{box-sizing:border-box;}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(180deg,var(--preto),var(--cinza));
+    color:var(--branco);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.card{
+    background:#111;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(88,101,242,.4);
+    max-width:400px;
+}
+
+.card h1{
+    margin-top:0;
+    color:var(--roxo);
+}
+
+.card p{
+    font-size:15px;
+    margin:20px 0;
+    color:#ccc;
+}
+
+button{
+    background:var(--roxo);
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Meu Bot do Discord</h1>
+    <p>
+        Adicione o bot ao seu servidor e aproveite todas
+        as funcionalidades disponíveis.
+    </p>
+
+    <button onclick="addBot()">
+        ➕ Adicionar ao Discord
+    </button>
+</div>
+
+<script>
+function addBot(){
+    window.location.href =
+    "https://discord.com/oauth2/authorize?client_id=1450550355459969208&permissions=8&integration_type=0&scope=bot";
+}
+</script>
+
+</body>
+</html>
